@@ -17,18 +17,27 @@ t.shape('turtle')
 #     t.left(90)
 #     t.left(5
 def square(x,y):
-    for i in range(60):
+    t.left(5)
+    for i in range(5):
      t.speed(0)
      t.forward(x)
      t.left(y) 
-square(100,90) 
+square(5,144) 
+
+# def doubleSquares(iRange):
+#     length = 25    
+#     for i in range(iRange):
+#      square(length, 90)
+#     length = length * 0.5
+# doubleSquares(5)
+def addSquares(iRange):
+     length = 5
+     for i in range(iRange):
+         square(length, 144)
+         length += 5
+addSquares(60) 
+
+turtle.done()
 
 
-           
-def doubleSquares(iRange):
-    length = 25
-    for i in range(iRange):
-        square(length, 90)
-        length = length * 2
-doubleSquares(5)  
 
